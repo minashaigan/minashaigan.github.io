@@ -1,151 +1,240 @@
 <!DOCTYPE html>
-<html>
-<title>Mina Shaigan</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.iconify.design/1/1.0.2/iconify.min.js"></script>
-<style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    .social_media {font-size: xx-large}
-</style>
-<body class="w3-light-grey">
+<html lang="en">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Mina Shaigan</title>
+    <!-- using online links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
 
-    <!-- The Grid -->
-    <div class="w3-row-padding">
+    <!-- using local links -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
 
-        <!-- Left Column -->
-        <div class="w3-third">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="shortcut icon" type="image/png" href="img/icon.jpg" />
+	
+	<style>
+	.explaination {
+		font-size: 16px;
+		text-align: justify;
+	}
+	.sidebar-content::-webkit-scrollbar {
+		display: none;
+	}
+	.sidebar-content {
+	  -ms-overflow-style: none;  /* IE and Edge */
+	  scrollbar-width: none;  /* Firefox */
+	}
+	</style>
+	<!-- about me -->
+	<style>
+	.container {
+		position: relative;
+	}
+	.text-block {
+		position: absolute;
+		height: 100%;
+		color: #fff;
+		top: 0;
+		background-color: rgba(0,0,0,0.5);
+		padding: 17px;
+	}
+	</style>
+</head>
 
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container">
-                    <img src="./images/avatar.jpg" style="width:100%" alt="Avatar">
-                    <div class="w3-display-bottomleft w3-container w3-text-white">
-                        <h2>Mina Shaigan</h2>
+<body>
+    <div class="page-wrapper legacy-theme sidebar-bg bg2 toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="#">Personal Website</a>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/profile.jpg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Mina
+                            <strong>Shaigan</strong>
+                        </span>
+                        <span class="user-role">Researcher</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Available</span>
+                        </span>
                     </div>
                 </div>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Bioinformatics reasercher - PHP Back End Developer</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Tehran, Iran</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>mina.shaigan@gmail.com</p>
-                    <hr>
-
-                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-                    <p>PHP</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                    </div>
-                    <p>Data Structures</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                            <div class="w3-center w3-text-white">80%</div>
-                        </div>
-                    </div>
-                    <p>Math</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                    </div>
-                    <p>Web Development</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">60%</div>
-                    </div>
-                    <p>Machine Learning</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                    </div>
-                    <br>
-
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                    <p>English</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:89%"></div>
-                    </div>
-                    <p>German</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-                    </div>
-                    <br>
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="#About">
+                                <i class="fa fa-user"></i>
+                                <span class="menu-text">About Me</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Research">
+                                <i class="fa fa-book"></i>
+                                <span class="menu-text">Research & Project</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Publications">
+                                <i class="far fa-edit"></i>
+                                <span class="menu-text">Publications & Presentations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Teaching">
+                                <i class="fa fa-microscope"></i>
+                                <span class="menu-text">Teaching & Work Experience</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Skills">
+                                <i class="fa fa-laptop-code"></i>
+                                <span class="menu-text">Skills</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Courses">
+                                <i class="fa fa-book-reader"></i>
+                                <span class="menu-text">Selected Courses</span>
+                            </a>
+                        </li>
+					 <li>
+                            <a href="#Contact">
+                                <i class="fa fa-address-book"></i>
+                                <span class="menu-text">Contact & Meet Me</span>
+                            </a>
+                        </li>
+					 <li>
+                            <a href="#CV">
+                                <i class="fa fa-download"></i>
+                                <span class="menu-text">Download CV</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div><br>
-
-            <!-- End Left Column -->
-        </div>
-
-        <!-- Right Column -->
-        <div class="w3-twothird">
-
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-				<div class="w3-container">
-                    <h5 class="w3-opacity"><b>Web Designer & Developer / bioinformatics.aut.ac.ir</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-                    <p>registeration and payment system for seminars and workshops, web designer, content management, video editor</p>
-                    <hr>
-				</div>
-				<div class="w3-container">
-					<h5 class="w3-opacity"><b>Back End Developer / hamyaad.vandasolutions.ir</b></h5>
-					<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2018 - Dec 2018</h6>
-					<p>Educational App, Educational website to show videos and get exams</p>
-					<hr>
-				</div>
-				<div class="w3-container">
-					<h5 class="w3-opacity"><b>Back End Developer / vestacamp.vestaak.com/</b></h5>
-					<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Dec 2017</h6>
-					<p>TOdOList website, Human Resource Management website, Audio Book website</p>
-					<hr>
-				</div>
+                <!-- sidebar-menu  -->
             </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
 
-            <div class="w3-container w3-card w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Shahid Beheshti University</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2020</h6>
-                    <p>Computer Science - Computation Theory</p>
-                    <p>Master Degree</p>
-                    <hr>
+                <div>
+                    <a href="mailto:mina.shaigan@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Amirkabir University of Technology</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2017</h6>
-                    <p>Applied Mathematics - Computer Science</p>
-                    <p>Bachelor Degree</p><br>
+			  <div>
+                    <a href="skype:live:.cid.ac3ee9bd07a73a22?chat">
+                        <i class="fab fa-skype"></i>
+                    </a>
+                </div>
+			  <div>
+                    <a href="https://www.linkedin.com/in/minashaigan/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
             </div>
+        </nav>
+        <!-- page-content  -->
+        <main class="page-content pt-2">
+            <div id="overlay" class="overlay"></div>
+			
+            <div class="container-fluid p-5">
+			  <div class="row">
+				<div class="form-group col-md-6">
+					<div class="container">
+					  <img alt="image" src="img/avatar.jpg" width="471" height="315" >
+					  <div class="text-block">
+						<h1 class="">Mina Shaigan</h1>
+						<ul class="list-unstyled">
+							<li>Computer and Data Science Department</li>
+							<li>Mathematical Science Faculty</li>
+							<li>Shahid Beheshti University</li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+				<div class="form-group col-md-6">
+					<h2 id="About">About Me</h2>
+					<p class="explaination">
+					My name is Mina Shaigan. 
+					Educated in both top-ranked universities of Iran, the Amirkabir University of Technology as a B.Sc. student in applied mathematics and computer science in minor and Shahid Beheshti University as M.Sc. student in computer science.
+					I'm interested in Computational Biology with Machine Learning Approaches. I love researching, and I'm eager to improve and develop my knowledge and skills. I'm a very motivated and hardworking individual, and I'm trying to do my best to be a helpful person to the world.
+					</p>
+				</div>
+			  </div>
+			  <hr>
+			  <div class="row">
+                    <div class="form-group col-md-12">
+					 <h2><i class="fa fa-certificate" style="color:#16c7ff"></i><span style="padding-left: 20px;">Education</span></h2>
+                        <div>
+						<h5 style="padding: 5px;padding-left: 0;"><b>Shahid Beheshti University, Tehran, Iran</b></h5>
+						<h6 style="padding: 5px;padding-left: 0;"><i class="fa fa-calendar" style="color:#16c7ff"></i><span style="padding-left: 20px;color:#16c7ff">2018 - 2020</span></h6>
+						<p class="explaination">
+						M.Sc., Computer Science (Algorithm and Computational Theory) </br>
+						Thesis Title: Discovering Novel Mutation Signatures Using Compound Latent Dirichlet Allocation </br>
+						Thesis grade: 4.0/4.0 (20/20). Excellent </br>
+						GPA: 3.69/4.0 (17.73/20) </br>
+						Supervisor: Dr. Ali Katanforoush  </br>
+						</p>
+						<hr>
+					</div>
+					<div>
+						<h5 style="padding: 5px;padding-left: 0;"><b>Amirkabir University of Technology, Tehran, Iran </b></h5>
+						<h6 style="padding: 5px;padding-left: 0;"><i class="fa fa-calendar" style="color:#16c7ff"></i><span style="padding-left: 20px;color:#16c7ff">2013 - 2017</span></h6>
+						<p class="explaination">
+						B.Sc., Major in Applied Mathematics, Minor in Computer Science </br>
+						Thesis Title: RNA Secondary Structure Prediction Using Ant Colony Algorithm  </br>
+						Thesis grade: 4.0/4.0 (20/20). Excellent  </br>
+						GPA: 3.36/4.0 (16.33/20)  </br>
+						Supervisor: Dr. Fatemeh Zare-Mirakabad </br>
+						</p>
+					</div>
+                    </div>
+                </div>
+			  <hr>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <h2 id="Research">Researches & Projects</h2>
+                        <p></p>
 
-            <!-- End Right Column -->
-        </div>
-
-        <!-- End Grid -->
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </main>
+        <!-- page-content" -->
     </div>
+    <!-- page-wrapper -->
 
-    <!-- End Page Container -->
-</div>
+    <!-- using online scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Find me on social media.</p>
-    <a href="https://www.facebook.com/minashaigan" class="social_media"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="http://instagram.com/mina._.shaigan" class="social_media"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="http://github.com/minashaigan" class="social_media"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="http://telegram.me/mina_shaigan" class="social_media"><i class="fa fa-telegram w3-hover-opacity"></i></a>
-    <a href="https://www.pinterest.com/minashaigan" class="social_media"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/minashaigan" class="social_media"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://soundcloud.com/mina-shaigan" class="social_media"><i class="fa fa-soundcloud w3-hover-opacity"></i></a>
-    <a href="https://goodreads.com/minashaigan" class="social_media">
-        <span class="icon-stack">
-            <i class="icon-sign-blank icon-stack-base"></i>
-            <i class="icon-light"><span style="font-family:helvetica;">g</span></i>
-        </span>
-    </a>
-
-    <p>Powered by Mina Shaigan</p>
-    <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
-</footer>
-
+    <script src="js/main.js"></script>
 </body>
+
 </html>
